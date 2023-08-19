@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Movie</title>
+</head>
+<body>
+<center>
+  <h2>Add a movie</h2> <br>
+  <h3> New Movie Details </h3>
+  <div id = "movie_details"></div>
+
+
+  <!-- Set the method to POST to avoid showing the username/password in the URL
+       The default action is disabled to allow your own implementation. -->
+  <form id="add_movie" method="post" action="#">
+    <label><b>Movie Title</b></label>
+    <label>
+      <input name="movietitle" placeholder="Enter Movie Title" type="text">
+    </label>
+    <br>
+    <label><b>Year</b></label>
+    <label>
+      <input name="movieyear" placeholder="Enter Movie Year" type="text">
+    </label>
+    <br>
+    <label><b>Director</b></label>
+    <label>
+      <input name="moviedirector" placeholder="Enter Movie Director" type="text">
+    </label>
+    <br>
+    <label><b>Star Name</b></label>
+    <label>
+      <input name="starname" placeholder="Enter Star Name" type="text">
+    </label>
+    <br>
+    <label><b>Birth Year</b></label>
+    <label>
+      <input name="birthyear" placeholder="Enter Birth Year (optional)" type="text">
+    </label>
+    <br>
+    <label><b>Genre</b></label>
+    <label>
+      <input name="moviegenre" placeholder="Enter Movie Genre" type="text">
+    </label>
+    <br>
+    <input type="submit" value="Submit"> <br>
+    <!--<div class="g-recaptcha" data-sitekey="6LcgE-ElAAAAAAcGhtPycmM1-40xFpinsbT3jBNX"></div> -->
+  </form>
+
+  <h3><a href="./dashboard.html">dashboard</a></h3>
+
+  <!-- include jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+
+  <!-- include our own JS file -->
+  <script src="./addmovie.js"></script>
+
+</center>>
+</body>
+</html>
